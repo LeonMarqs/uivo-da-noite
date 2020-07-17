@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Uivo da Noite</title>
   
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/21df2a399d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,6 +42,9 @@
               <li>
                 <a href="#">Contato</a>
               </li>
+              <li>
+                <button class="login">Entrar</button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -47,10 +55,69 @@
     <span>O Uivo da Noite</span>
   </section>
 
-  <div class="container">
+  <main class="container">
     <section class="posts">
-      
+      <div data-aos="fade-right" class="post">
+        <img src="img/wolf1.jpg" alt="imagem">
+        <div class="text">
+          <h1>O Uivo da Noite</h1>
+          <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-right" class="post">
+        <img src="img/lion1.jpg" alt="imagem">
+        <div class="text">
+          <h1>O Uivo da Noite</h1>
+          <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
+        </div>
+      </div>
+
     </section>
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div>
+        <h1>Logo</h1>
+        <a href="#">Um site fictício</a>
+      </div>
+
+      <div>
+        <h1>Informações</h1>
+        <a href="#">Sobre Mim</a>
+        <a href="#">Blog</a>
+      </div>
+
+      <div>
+        <h1>Links Úteis</h1>
+        <a href="#">Suporte</a>
+        <a href="#">Serviços</a>
+        <a href="#">Política de privacidade</a>
+      </div>
+
+      <div>
+        <h1>Inscreva-se para mais informações</h1>
+        <input type="text" placeholder="Seu email"></input>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="pos-footer">
+    <div class="container">
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fas fa-envelope-square"></i>
+      </div>
+  
+      <div class="rights">
+        2020 - Leonardo, Todos os direitos reservados
+      </div>
+    </div>
+    
   </div>
 
   <button href= "#header" class="to-top" onclick="topFunction()">
@@ -58,5 +125,15 @@
   </button>
   
   <script src="js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      once: true,
+    });
+  </script>
+
 </body>
 </html>

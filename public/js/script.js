@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
   BACK_TOP.classList.toggle('visible', window.scrollY > 300);
 });
 
-/*Menu Responsivo */
+/* Menu Responsivo */
 MENU_TOGGLE.addEventListener('click', () => {
 
   document.body.style.overflowY = show ? 'hidden' : 'initial';
@@ -26,3 +26,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
