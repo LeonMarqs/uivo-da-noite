@@ -1,22 +1,25 @@
-<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Uivo da Noite</title>
+
+  <base href="/">
   
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/styles.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/21df2a399d.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+  
   <header id="header">
       <div class="container">
         <a class="logo" href="#">
@@ -31,19 +34,19 @@
           <nav>
             <ul>
               <li>
-                <a class="active" href="#">Home</a>
+                <a class="menu-link" class="active" href="#">Home</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a class="menu-link" href="#">Blog</a>
               </li>
               <li>
-                <a href="#">Sobre Mim</a>
+                <a class="menu-link" href="#">Sobre Mim</a>
               </li>
               <li>
-                <a href="#">Contato</a>
+                <a class="menu-link" href="#">Contato</a>
               </li>
               <li>
-                <button class="login">Entrar</button>
+                <a href="/login" class="login">Entrar</a>
               </li>
             </ul>
           </nav>
@@ -58,7 +61,7 @@
   <main class="container">
     <section class="posts">
       <div data-aos="fade-right" class="post">
-        <img src="img/wolf1.jpg" alt="imagem">
+        <img src="http://localhost:8080/public/img/wolf1.jpg" alt="Lobo">
         <div class="text">
           <h1>O Uivo da Noite</h1>
           <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
@@ -66,7 +69,7 @@
       </div>
 
       <div data-aos="fade-right" class="post">
-        <img src="img/lion1.jpg" alt="imagem">
+        <img src="http://localhost:8080/public/img/lion1.jpg" alt="Leão">
         <div class="text">
           <h1>O Uivo da Noite</h1>
           <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
@@ -107,6 +110,7 @@
 
   <div class="pos-footer">
     <div class="container">
+
       <div class="social">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-instagram-square"></i>
@@ -116,6 +120,7 @@
       <div class="rights">
         2020 - Leonardo, Todos os direitos reservados
       </div>
+      
     </div>
     
   </div>
@@ -124,7 +129,7 @@
     <i class="fas fa-arrow-up fa-3x"></i>
   </button>
   
-  <script src="js/script.js"></script>
+  <script src="http://localhost:8080/public/js/script.js"></script>
 
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -136,4 +141,5 @@
   </script>
 
 </body>
+
 </html>

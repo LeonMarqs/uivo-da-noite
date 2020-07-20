@@ -5,7 +5,6 @@
 }
 
 :root {
-  /* --primary-color:; */
   --primary-color: #000;
   --text-color: rgb(238, 238, 238);
   --red-color: #a10a0a;
@@ -90,7 +89,7 @@ header .container nav ul li {
 }
 
 header .container nav ul li a,
-header .container nav ul li button {
+header .container nav ul li .login {
   display: flex;
   flex-direction: column;
 
@@ -106,7 +105,7 @@ header .container nav ul li button {
   transition: 0.6s;
 }
 
-header .container nav ul li button {
+header .container nav ul li .login {
   padding: 1rem 1rem;
 
   border-radius: 5px;
@@ -116,12 +115,12 @@ header .container nav ul li button {
   cursor: pointer;
 }
 
-header .container nav ul li button:hover {
+header .container nav ul li .login:hover {
   background-color: var(--red-color);
 }
 
 header .container nav ul li a.active::after,
-header .container nav ul li a:hover::after {
+header .container nav ul li a.menu-link:hover::after {
   display: block;
   
   height: 2px;
@@ -145,11 +144,11 @@ header.sticky {
 
 header.sticky .logo,
 header.sticky nav ul li a,
-header.sticky nav ul li button {
+header.sticky nav ul li .login {
   color: var(--text-header-secondary);
 }
 
-header.sticky .container nav ul li button:hover {
+header.sticky .container nav ul li .login:hover {
   color: var(--text-color);
 }
 
@@ -370,7 +369,7 @@ footer .container div input {
   }
 
   header.sticky nav ul li a,
-  header.sticky nav ul li button  {
+  header.sticky nav ul li .login  {
   color: var(--text-color);
   }
 
