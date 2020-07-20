@@ -1,22 +1,4 @@
-<html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Uivo da Noite</title>
-
-  <base href="/">
-  
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/styles.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/21df2a399d.js" crossorigin="anonymous"></script>
-</head>
 
 <body>
   
@@ -125,7 +107,7 @@
     
   </div>
 
-  <button href= "#header" class="to-top" onclick="topFunction()">
+  <button class="to-top" onclick="topFunction()">
     <i class="fas fa-arrow-up fa-3x"></i>
   </button>
   

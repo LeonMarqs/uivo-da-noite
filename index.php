@@ -2,6 +2,8 @@
 
 $request = $_SERVER['REQUEST_URI'];
 
+require __DIR__ . '/public/views/template.php';
+
 switch ($request) {
     case '/' :
         require __DIR__ . '/public/views/index.php';
