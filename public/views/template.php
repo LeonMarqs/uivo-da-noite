@@ -9,7 +9,8 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/global.css">
 
-  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/<?=$style?>.css">
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   

@@ -1,4 +1,6 @@
-
+<?php 
+$style = 'styles';
+?>
 
 <body>
   
@@ -123,5 +125,3 @@
   </script>
 
 </body>
-
-</html>
