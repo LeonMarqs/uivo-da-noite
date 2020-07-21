@@ -1,4 +1,5 @@
 <?php 
+$title = 'O Uivo da Noite';
 $style = 'styles';
 ?>
 
@@ -45,7 +46,7 @@ $style = 'styles';
   <main class="container">
     <section class="posts">
       <div data-aos="fade-right" class="post">
-        <img src="http://localhost:8080/public/img/wolf1.jpg" alt="Lobo">
+        <img src="public/assets/wolf1.jpg" alt="Lobo">
         <div class="text">
           <h1>O Uivo da Noite</h1>
           <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
@@ -53,7 +54,7 @@ $style = 'styles';
       </div>
 
       <div data-aos="fade-right" class="post">
-        <img src="http://localhost:8080/public/img/lion1.jpg" alt="Leão">
+        <img src="public/assets/lion1.jpg" alt="Leão">
         <div class="text">
           <h1>O Uivo da Noite</h1>
           <p>Um site fictício criado por Leonardo a fim de desenvolver e colocar em prática suas habilidades em desenvolvimento web.</p>
@@ -113,7 +114,7 @@ $style = 'styles';
     <i class="fas fa-arrow-up fa-3x"></i>
   </button>
   
-  <script src="http://localhost:8080/public/js/script.js"></script>
+  <script src="public/js/script.js"></script>
 
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

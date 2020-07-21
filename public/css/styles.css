@@ -139,9 +139,9 @@ header.sticky .container nav ul li .login:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   
-  background: url('../img/wallpaper.jpg');
+  background: url('../assets/wallpaper3.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ header.sticky .container nav ul li .login:hover {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 
-  text-align: center;
+  margin-left: 5rem;
 
   color: var(--text-color);
 
@@ -350,6 +350,15 @@ footer .container div input {
   color: var(--text-color);
   }
 
+  /*Banner */
+  .banner {
+    align-items: center;
+  }
+  .banner span {
+    margin-left: 0;
+    text-align: center;
+  }
+
   .menu-toggle {
     display: flex;
 
@@ -464,6 +473,21 @@ footer .container div input {
   }
   .post .text p {
     font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 415px) {
+  .banner {
+    background: url('../assets/wallpaper3.jpg');
+    background-position: 60% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .pos-footer .container .rights {
+    font-size: 1rem;
+  }
+  .pos-footer .container .social i {
+    font-size: 2rem;
   }
 }
 

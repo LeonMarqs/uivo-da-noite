@@ -1,15 +1,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Uivo da Noite</title>
+  <title><?=$title?></title>
   
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/global.css">
+  <link rel="stylesheet" type="text/css" href="public/css/global.css">
 
-  <link rel="stylesheet" type="text/css" href="http://localhost:8080/public/css/<?=$style?>.css">
+  <link rel="stylesheet" type="text/css" href="public/css/<?=$style?>.css">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
