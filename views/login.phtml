@@ -5,7 +5,41 @@ require 'template.phtml';
 ?>
 
 <body>
+
   <div class="container">
-    
+
+    <div class="logo">
+      <div>
+        <a href="#">Login com <span class="google">Google</span></a>
+      </div>
+
+      <div>
+        <a href="#">Login com <span class="facebook">Facebook</span></a>
+      </div>
+    </div>
+
+    <div class="login">
+
+      <div class="login-content">
+        <span class="login-title">Login</span>
+
+        <form action="/login.php" method="post">
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+          <div class="line"></div>
+
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha">
+          <div class="line"></div>
+
+          <button type="submit">Logar</button>
+
+        </form>
+      </div>
+
+    </div>
+
   </div>
+
 </body>

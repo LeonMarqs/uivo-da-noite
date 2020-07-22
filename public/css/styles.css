@@ -490,8 +490,3 @@ footer .container div input {
   }
 }
 
-@media (min-width: 1920px) {
-  html {
-    font-size: 100%;
-  }
-}
