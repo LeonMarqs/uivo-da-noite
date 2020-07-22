@@ -7,13 +7,14 @@
 :root {
   --primary-color: #000;
   --text-color: rgb(238, 238, 238);
-  --red-color: #a10a0a;
+  --secondary-color: #4d5796;
   --text-header-secondary: rgb(22, 22, 22);
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

@@ -5,7 +5,10 @@ html {
 }
 
 body {
-  background: #0f0f0f url('../assets/wallpaper2.jpg');
+  background: #0f0f0f url('../assets/login-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -16,7 +19,9 @@ body {
   transform: translate(-50%, -50%);
 
   width: 360px;
-  height: 520px;
+  height: 620px;
+
+  background-color: rgba(0, 0, 0, 0.87);
 
   border: 1px solid red;
 }

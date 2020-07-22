@@ -86,14 +86,14 @@ header .container nav ul li .login {
   padding: 1rem 1rem;
 
   border-radius: 5px;
-  border: 2px solid var(--red-color);
+  border: 2px solid var(--secondary-color);
   background: transparent;
 
   cursor: pointer;
 }
 
 header .container nav ul li .login:hover {
-  background-color: var(--red-color);
+  background-color: var(--secondary-color);
 }
 
 header .container nav ul li a.active::after,
@@ -103,7 +103,7 @@ header .container nav ul li a.menu-link:hover::after {
   height: 2px;
   width: 100%;
   
-  background: var(--red-color);
+  background: var(--secondary-color);
 
   content: '';
 }
@@ -194,7 +194,7 @@ header.sticky .container nav ul li .login:hover {
 }
 
 .post .text h1 {
-  color: var(--red-color);
+  color: var(--secondary-color);
 
   text-align: center;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ footer .container div {
 
 footer .container div h1 {
   font-size: 2rem;
-  color: var(--red-color);
+  color: var(--secondary-color);
   margin-bottom: 1rem;
 }
 
@@ -271,26 +271,25 @@ footer .container div input {
 }
 
 .pos-footer .container {
-  display: grid;
-  grid-template-columns: repeat(autofit, minmax(290px, 1fr));
-
-  grid-template-areas: 'NA SO RI';
+  display: flex;
+  justify-content: space-between;
 }
 
 .pos-footer .container .social {
-  grid-area: SO;
   text-align: center;
 }
-.pos-footer .container .social i {
+.pos-footer .container .social i:nth-child(n + 2) {
   margin-left: 1rem;
+}
+
+.pos-footer .container .social i {
   font-size: 3rem;
-  color: var(--red-color);
+  color: var(--secondary-color);
 
   cursor: pointer;
 }
 .pos-footer .container .rights {
   text-align: end;
-  grid-area: RI;
 
   font-size: 1.5rem;
 }
@@ -316,7 +315,7 @@ footer .container div input {
   color: var(--text-color);
   
   text-align: center;
-  background-color: var(--red-color);
+  background-color: var(--secondary-color);
 
   border-radius: 50%;
   
