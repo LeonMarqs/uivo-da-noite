@@ -17,6 +17,10 @@ switch ($request[0]) {
     require __DIR__ . '/App/Views/login.phtml';
   break;
 
+  case '/logout' :
+    require __DIR__ . '/App/Controllers/logoutController.php';
+  break;
+
   case '/autenticar' :
     require __DIR__ . '/App/Controllers/loginController.php';
   break;

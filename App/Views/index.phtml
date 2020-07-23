@@ -4,7 +4,7 @@ $style = 'styles';
 require 'template.phtml';
 
 session_start();
-print_r($_SESSION);
+
 ?>
 
 <body>
@@ -12,7 +12,7 @@ print_r($_SESSION);
   <header id="header">
       <div class="container">
         <a class="logo" href="#">
-          LOGO
+          <img src="public/assets/wolf-logo.png" alt="">
         </a>
         <div class="menu-section">
           <div class="menu-toggle">
@@ -35,7 +35,9 @@ print_r($_SESSION);
                 <a class="menu-link" href="#">Contato</a>
               </li>
               <li>
-                <a href="/login" class="login">Entrar</a>
+                <?= !isset($_SESSION['id']) ? '<a href="/login" class="login">Entrar</a>' : '<a href="/logout" class="login">Sair</a>';
+                ?>
+                
               </li>
             </ul>
           </nav>
@@ -44,7 +46,11 @@ print_r($_SESSION);
   </header>
 
   <section class="banner">
-    <span>O Uivo da Noite</span>
+    <span>O Uivo da Noite
+      <?php if(isset($_SESSION['id'])) { ?>
+        <p>Bem Vindo(a), <?=$_SESSION['name']?></p>
+      <?php } ?>
+    </span>
   </section>
 
   <main class="container">
