@@ -37,9 +37,11 @@ class User {
 
     if($row > 0 && $row === 1) {
       return mysqli_fetch_assoc($result);
-    } else {
+    }  
+    else {
       header('Location: /login?error=noAuth');
     }
+
   }
 
 }

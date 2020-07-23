@@ -39,7 +39,23 @@ require 'template.phtml';
 
         </form>
 
-        <p class="login-error">Texto de erro</p>
+        <?php
+      
+          if(isset($_SERVER['QUERY_STRING'])) {
+            $error = explode('=', $_SERVER['QUERY_STRING']);
+
+            foreach($error as $value) {
+              if ($value == 'empty') {
+                echo '<p class="login-error">Campo(s) não estão preenchido(s)</p>';
+              }
+  
+              if ($value == 'noAuth') {
+                echo '<p class="login-error">E-mail e/ou senha incorreto(s)</p>';
+              }
+            }
+          }
+         
+        ?>
 
         <a href="/"><i class="fas fa-arrow-left fa-3x"></i></a>
       </div>

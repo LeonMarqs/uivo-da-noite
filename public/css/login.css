@@ -202,6 +202,19 @@ body {
   padding: 0.5rem;
 }
 
+.login .login-content .login-error {
+  color: red;
+
+  display: block;
+
+  width: 100%;
+
+  font-size: 1.3rem;
+  text-align: center;
+
+  margin-top: 1rem;
+}
+
 .login .login-content a i.fa-arrow-left {
   color: var(--login-primary);
   transition-duration: 0.4s;
