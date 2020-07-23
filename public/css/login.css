@@ -1,6 +1,7 @@
 html {
   width: 100%;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 :root {
@@ -114,14 +115,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 
 .login .login-content { 
   display: flex;
   flex-direction: column;
   font-family: 'Oswald', sans-serif;
+  align-items: flex-start;
 
 }
+
+.login img {
+  width: 80px;
+  position: absolute;
+  top: 3rem;
+
+}
+
 .login .login-content span,
 .login .login-content form label {
   color: rgb(39, 39, 39);
@@ -185,8 +197,19 @@ body {
   border-radius: 5px;
 }
 
-.login form button:hover {
-  filter: opacity(90%);
+.login .login-content a {
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.login .login-content a i.fa-arrow-left {
+  color: var(--login-primary);
+  transition-duration: 0.4s;
+}
+
+.login form button:hover,
+.login .login-content a i.fa-arrow-left:hover {
+  filter: opacity(85%);
 }
 
 @media (max-width: 1100px) {
@@ -207,6 +230,7 @@ body {
 @media (max-width: 526px) {
   .container {
     width: 100%;
+    height: 100vh;
   }
 }
 

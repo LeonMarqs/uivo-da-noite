@@ -1,5 +1,5 @@
 <?php 
-$title = 'Login - O uivo da Noite';
+$title = 'Login - O Uivo da Noite';
 $style = 'login';
 require 'template.phtml';
 ?>
@@ -20,10 +20,12 @@ require 'template.phtml';
 
     <div class="login">
 
+      <img src="/public/assets/wolf-logo.png" alt="Logo">
+
       <div class="login-content">
         <span class="login-title">Login</span>
 
-        <form action="/login.php" method="post">
+        <form action="/autenticar?action=login" method="post">
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
@@ -36,6 +38,10 @@ require 'template.phtml';
           <button type="submit">Logar</button>
 
         </form>
+
+        <p class="login-error">Texto de erro</p>
+
+        <a href="/"><i class="fas fa-arrow-left fa-3x"></i></a>
       </div>
 
     </div>
