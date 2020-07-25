@@ -30,3 +30,23 @@ if(isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] == 'action=login'
   };
 
 };
+
+/* Register */
+if(isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] == 'action=register') {
+
+  $email = mysqli_real_escape_string($connection, $_POST['email']);
+  $password = mysqli_real_escape_string($connection, $_POST['password']);
+  $name = mysqli_real_escape_string($connection, $_POST['name']);
+
+  $user = new User($connection);
+  
+  $user->__set('email', $email);
+  $user->__set('password', $password);
+  $user->__set('name', $name);
+
+  if($user->verifyUserByEmail()) {
+    $user->register();
+    header('Location: /register?success=true');
+  }
+
+}

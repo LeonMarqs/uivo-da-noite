@@ -1,0 +1,73 @@
+<?php 
+$title = 'Cadastrar - O Uivo da Noite';
+$style = 'login';
+require 'template.phtml';
+?>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <div>
+        <a href="#">Registrar com <span class="google">Google</span></a>
+      </div>
+
+      <div>
+        <a href="#">Registrar com <span class="facebook">Facebook</span></a>
+      </div>
+    </div>
+
+    <div class="login">
+
+      <img src="/public/assets/wolf-logo.png" alt="Logo">
+
+      <div class="login-content register">
+        <span class="login-title">Cadastro</span>
+
+        <form action="/authenticate?action=register" method="post">
+
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome">
+          <div class="line"></div>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+          <div class="line"></div>
+
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha">
+          <div class="line"></div>
+
+          <button type="submit">Cadastrar</button>
+
+        </form>
+
+        <?php
+      
+          // if(isset($_SERVER['QUERY_STRING'])) {
+          //   $error = explode('=', $_SERVER['QUERY_STRING']);
+
+          //   foreach($error as $value) {
+          //     if ($value == 'empty') {
+          //       echo '<p class="login-error">Campo(s) não estão preenchido(s)</p>';
+          //     }
+  
+          //     if ($value == 'noAuth') {
+          //       echo '<p class="login-error">E-mail e/ou senha incorreto(s)</p>';
+          //     }
+          //   }
+          // }
+         
+        ?>
+
+        <a class="register" href="/login">Já tem uma conta? Entrar</a>
+
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</body>

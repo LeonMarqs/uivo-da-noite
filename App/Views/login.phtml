@@ -25,7 +25,7 @@ require 'template.phtml';
       <div class="login-content">
         <span class="login-title">Login</span>
 
-        <form action="/autenticar?action=login" method="post">
+        <form action="/authenticate?action=login" method="post">
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
@@ -57,7 +57,10 @@ require 'template.phtml';
          
         ?>
 
+        <a class="register" href="/register">Não tem uma conta? Cadastre-se</a>
+        
         <a href="/"><i class="fas fa-arrow-left fa-3x"></i></a>
+
       </div>
 
     </div>

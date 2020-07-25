@@ -22,6 +22,36 @@ class User {
 
   public function register() {
 
+    $query = 
+    " INSERT into users(name, email, password)
+      VALUES('$this->name', '$this->email', '".md5($this->password)."')
+    ";
+
+    $result = mysqli_query($this->db, $query);
+    if($result) {
+      return true;
+    }
+
+  }
+
+  public function verifyUserByEmail() {
+    $query = 
+    " SELECT email
+      FROM users 
+      WHERE email = '{$this->email}'
+    ";
+
+    $result = mysqli_query($this->db, $query);
+    $row = mysqli_num_rows($result);
+
+    if($row > 0) {
+      header('Location: /register?error=exists');
+      return false;
+    }  
+    else {
+      return true;
+    }
+
   }
 
   public function verifyUser() {
@@ -29,7 +59,7 @@ class User {
     $query = 
     " SELECT id, name, email, password
       FROM users 
-      WHERE email = '{$this->email}' AND password = '{$this->password}'
+      WHERE email = '{$this->email}' AND password = '".md5($this->password)."'
     ";
 
     $result = mysqli_query($this->db, $query);
@@ -40,6 +70,7 @@ class User {
     }  
     else {
       header('Location: /login?error=noAuth');
+      return false;
     }
 
   }
