@@ -220,6 +220,10 @@ body {
   margin-top: 1rem;
 }
 
+.login .login-content .login-error.success {
+  color: green;
+}
+
 .login .login-content a i.fa-arrow-left {
   color: var(--secondary-color);
   transition-duration: 0.4s;
