@@ -5,7 +5,7 @@
     Ações: <strong>Cadastrar</strong> um novo usuário e fazer <strong>login</strong>.
   </p>
 
-<p align="center"><img src="https://imgur.com/T2AOj0j.gif" width="450"></p>
+<p align="center"><img src="https://imgur.com/bHMQanV.gif" width="450"></p>
 
 ## :hammer: Ferramentas Utilizadas
 * <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
