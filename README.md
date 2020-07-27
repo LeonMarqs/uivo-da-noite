@@ -1,12 +1,16 @@
-<h3 align="center">O Uivo da Noite</h3>
+<h1 align="center">O Uivo da Noite</h1>
   <br>
   <p align="center">
     Um website fictício feito com PHP. <br>
     Ações: <strong>Cadastrar</strong> um novo usuário e fazer <strong>login</strong>.
   </p>
 
-<p align="center"><img src="https://imgur.com/Uk7ba3i.gif" width="450"></p>
+<p align="center"><img src="https://imgur.com/Uk7ba3i.gif" width="650"></p>
 
+<h3 align="center">Tela de login e cadastro</h3>
+<p align="center"><img src="https://imgur.com/3rFqh0M.gif" width="650"></p>
+
+<hr>
 
 ## :hammer: Ferramentas Utilizadas
 * <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
@@ -44,7 +48,10 @@
     ``` localhost:8080/```
 
 ## Responsividade
-<img src="https://imgur.com/AR8hLdE.gif" width="250">
+<img src="https://imgur.com/5VFZpVN.gif" width="350">
+
+## Página 404
+<img src="https://imgur.com/nIVMKD6.png" width="350">
 
 ## :eye: Observações
 
