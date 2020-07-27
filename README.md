@@ -1,4 +1,4 @@
-<h1 align="center">O Uivo da Noite</h1>
+p<h1 align="center">O Uivo da Noite</h1>
   <br>
   <p align="center">
     Um website fictício feito com PHP. <br>
@@ -9,6 +9,9 @@
 
 <h3 align="center">Tela de login e cadastro</h3>
 <p align="center"><img src="https://imgur.com/3rFqh0M.gif" width="650"></p>
+
+<h3 align="center">Página 404</h3>
+<p align="center"><img src="https://imgur.com/nIVMKD6.png" width="650"></p>
 
 <hr>
 
@@ -50,9 +53,6 @@
 ## Responsividade
 <img src="https://imgur.com/5VFZpVN.gif" width="350">
 
-## Página 404
-<img src="https://imgur.com/nIVMKD6.png" width="350">
-
 ## :eye: Observações
 
 * Caso queira mudar as configurações do banco de dados, deverá fazer ajustes no arquivo Connection.php
@@ -60,4 +60,5 @@
 * Não implementei as APIs para o cadastro com as redes sociais, é apenas visual.
 
 <hr>
+
 <h5 align="center"> O projeto é open-source, então se quiser contribuir, fique a vontade.</h5>
