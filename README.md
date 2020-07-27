@@ -1,4 +1,4 @@
-p<h1 align="center">O Uivo da Noite</h1>
+<h1 align="center">O UIVO DA NOITE</h1>
   <br>
   <p align="center">
     Um website fictício feito com PHP. <br>
