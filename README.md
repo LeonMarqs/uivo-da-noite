@@ -59,6 +59,8 @@
 
 * Não implementei as APIs para o cadastro com as redes sociais, é apenas visual.
 
+* O sistema de rotas está no arquivo index.php
+
 <hr>
 
 <h5 align="center"> O projeto é open-source, então se quiser contribuir, fique a vontade.</h5>
