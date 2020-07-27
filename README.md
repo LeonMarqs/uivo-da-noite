@@ -5,8 +5,8 @@
     Ações: <strong>Cadastrar</strong> um novo usuário e fazer <strong>login</strong>.
   </p>
 
-<!-- <p align="center"><img src="https://imgur.com/N3bk95Z.gif" width="450"></p> -->
-![Introdução do app](https://imgur.com/N3bk95Z.gif)
+<p align="center"><img src="https://imgur.com/Uk7ba3i.gif" width="450"></p>
+
 
 ## :hammer: Ferramentas Utilizadas
 * <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
