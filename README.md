@@ -5,11 +5,12 @@
     Ações: <strong>Cadastrar</strong> um novo usuário e fazer <strong>login</strong>.
   </p>
 
-<p align="center"><img src="https://imgur.com/Ue8VuB0.gif" width="450"></p>
+<p align="center"><img src="https://imgur.com/T2AOj0j.gif" width="450"></p>
 
 ## :hammer: Ferramentas Utilizadas
 * <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
 * <a href="https://www.apachefriends.org/download.html">Xampp (Apache + MariaDB)</a>
+* <a href="https://www.php.net/downloads.php">PHP</a>
 * <a href="https://github.com/michalsnik/aos">AOS (js library)</a>
 
 ## :zap: Executar o projeto
@@ -35,7 +36,7 @@
     ```$ git clone https://github.com/LeonMarqs/auth_example.git```
 
 4. #### Ligar o servidor PHP pelo terminal
-    ```$ php -S localhost:8080```
+    ```$ php -S localhost:8080```<br>
     <img src="https://imgur.com/R1GLk9I.png" width="350">
 
 5. #### Abrir a página index no navegador
